@@ -1,0 +1,39 @@
+html{
+  scroll-snap-type: y mandatory;
+}
+
+.app{
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.app__videos{
+  position: relative;
+  height: 570px;
+  width: 50%;
+  /* border:  2px solid black; */
+  border-radius: 20px;
+  max-width: 420px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  /* margin-top: 30px; */
+  top:0px;
+  margin-top: 0px;
+}
+
+/* Hide scrollbar for chrome, safari and opera */
+.app__videos::-webkit-scrollbar{
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.app__videos{
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.app__videos > video{
+margin-bottom: 0px;
+}
